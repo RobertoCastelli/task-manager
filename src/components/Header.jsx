@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "./Navbar";
+import { MyContext } from "../context/Context";
 
 const Header = () => {
+  const { database } = useContext(MyContext);
   return (
     <header>
       <Navbar />
-      Header
+
+      {database.map((doc) => (
+        <div key={doc.id}>{doc.ditta}</div>
+      ))}
     </header>
   );
 };
