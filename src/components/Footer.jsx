@@ -7,7 +7,7 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <div>Task Manager - AGIS @2024 v.1.08</div>
+      <div>Task Manager - AGIS @ 2024 v.1.08</div>
       <div>
         <FaReact />
         <FaGithub />

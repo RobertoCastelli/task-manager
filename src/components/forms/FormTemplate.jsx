@@ -17,7 +17,7 @@ const FormTemplate = (props) => (
   >
     {({ isSubmitting }) => (
       <Form>
-        {/* Renderizza i campi del modulo */}
+        {props.title && <h3>{props.title}</h3>}
         {props.fields.map((field, index) => (
           <CustomField
             key={index} // Identificatore unico per ogni campo

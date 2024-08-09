@@ -1,41 +1,41 @@
 /* Stili per l'header */
-header {
-  background-color: var(--dark-slate-gray); /* Colore di sfondo scuro per l'header */
-  color: var(--white); /* Colore del testo bianco per l'header */
-  padding: 1rem 2rem; /* Spazio interno: 1rem sopra e sotto, 2rem a sinistra e destra */
-  display: flex; /* Dispone gli elementi dell'header in una riga */
-  flex-direction: column; /* Dispone gli elementi in colonna */
-  align-items: center; /* Allinea gli elementi al centro orizzontalmente */
-  border-bottom: 2px solid var(--cadet-blue); /* Bordo inferiore blu chiaro */
+header { 
+  display: flex; 
+  align-items: center; 
+  padding: 1rem 2rem; 
+  color: var(--white);
+  background-color: var(--dark-slate-gray); 
+  flex-direction: column; 
+  border-bottom: 2px solid var(--cadet-blue); 
 }
 
 /* Stili per la navbar */
 .navbar {
-  width: 100%;
-  display: flex; /* Dispone i link di navigazione in fila */
-  justify-content: center; /* Allinea i link al centro */
-  margin-bottom: 1rem; /* Spazio sotto la navbar */
+  display: flex; 
+  justify-content: center;
+  width: 100%; 
+  margin-bottom: 1rem; 
 }
 
 /* Stili per i link della navbar */
-.navbar a {
-  color: var(--white); /* Colore dei link bianco */
-  text-decoration: none; /* Rimuove la sottolineatura dai link */
-  margin: 0 1rem; /* Spazio orizzontale tra i link */
-  font-size: 1rem; /* Dimensione del testo dei link */
-  font-weight: 600; /* Peso del font per i link */
-  transition: color 0.3s ease; /* Transizione per il cambiamento del colore */
+.navbar a { 
+  margin: 0 1rem; 
+  font-size: 1rem; 
+  font-weight: 600; 
+  text-decoration: none;
+  color: var(--white); 
+  transition: color 0.3s ease; 
 }
 
 .navbar a:hover {
-  color: var(--coral); /* Colore dei link al passaggio del mouse */
+  color: var(--coral); 
 }
 
 /* Stili per i documenti */
-header > div {
-  margin-top: 1rem; /* Spazio sopra la lista dei documenti */
-  color: var(--white); /* Colore del testo dei documenti bianco */
-  font-size: 1rem; /* Dimensione del testo dei documenti */
-  font-weight: 400; /* Peso del font normale per i documenti */
-  text-align: center; /* Allinea il testo al centro */
+header > div { 
+  font-size: 1rem; 
+  font-weight: 400; 
+  text-align: center; 
+  color: var(--white);
+  margin-top: 1rem; 
 }

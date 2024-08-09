@@ -9,7 +9,6 @@ const Header = () => {
   return (
     <header>
       <Navbar />
-
       {database.map((doc) => (
         <div key={doc.id}>{doc.ditta}</div>
       ))}

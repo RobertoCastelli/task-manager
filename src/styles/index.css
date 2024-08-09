@@ -3,22 +3,21 @@
 :root {
     --cadet-blue: #5F9EA0;
     --coral: #FF7F50;
-    --light-goldenrod-yellow: #FAFAD2;
-    --dark-slate-gray: #282c34;
-    --papaya-whip: #FFEFD5;
-    --ocean-blue: #3a698f;
-    --sea-green: #2E8B57;
     --light-salmon: #FFA07A;
-    --orange: orange;
+    --orange: #FFA500;
+    --dark-slate-gray: #282c34;
+    --ocean-blue: #3a698f;
     --white: #f4f4f4;
+    --grey: #ccc;
 }
 
 body {
   margin: 0;
-  color: var(--white);
-  background-color: var(--ocean-blue);
   font-family: "Montserrat", "roboto", sans-serif;
   font-weight: 400;
+  text-transform: capitalize;
+  color: var(--white);
+  background-color: var(--ocean-blue);
   letter-spacing: 0.05rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,6 +26,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: var(--orange);
 }
 
 * {

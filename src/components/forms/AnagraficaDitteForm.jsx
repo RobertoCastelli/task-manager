@@ -51,20 +51,56 @@ const AnagraficaDitteForm = () => {
     {
       name: "ditta",
       type: "text",
-      label: "ditta",
-      placeholder: "inserisci nome ditta",
+      placeholder: "ditta",
     },
     {
       name: "tipologiaServizio",
       type: "text",
-      label: "tipologia servizio",
-      placeholder: "inserisci la tipologia del servizio",
+      placeholder: "tipologia del servizio",
+    },
+    {
+      name: "via",
+      type: "text",
+      placeholder: "via",
+    },
+    {
+      name: "civico",
+      type: "text",
+      placeholder: "civico",
+    },
+    {
+      name: "cap",
+      type: "text",
+      placeholder: "cap",
+    },
+    {
+      name: "città",
+      type: "text",
+      placeholder: "città",
+    },
+    {
+      name: "piva",
+      type: "text",
+      placeholder: "P.IVA",
+    },
+    {
+      name: "pec",
+      type: "email",
+      placeholder: "PEC",
+    },
+    {
+      name: "referenteDitta",
+      type: "text",
+      placeholder: "referente ditta",
     },
   ];
 
   return (
     // Renderizza il template del modulo con le configurazioni fornite
-    <FormTemplate {...{ initialValues, validationSchema, onSubmit, fields }} />
+    <FormTemplate
+      title="anagrafica ditte"
+      {...{ initialValues, validationSchema, onSubmit, fields }}
+    />
   );
 };
 

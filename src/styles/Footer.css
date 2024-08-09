@@ -1,32 +1,33 @@
 /* Stili per il footer */
 footer {
-  background-color: var(--dark-slate-gray); /* Colore di sfondo scuro per il footer */
-  color: var(--white); /* Colore del testo bianco per il footer */
-  padding: 1rem; /* Spazio interno per il footer */
-  text-align: center; /* Allinea il testo al centro */
-  font-size: 0.875rem; /* Dimensione del testo leggermente più piccola */
-  border-top: 2px solid var(--cadet-blue); /* Bordo superiore blu chiaro */
+  background-color: var(--dark-slate-gray); 
+  color: var(--white); 
+  padding: 1rem; 
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem; 
+  border-top: 2px solid var(--cadet-blue); 
 }
 
 /* Stili per la sezione di testo del footer */
 footer > div:first-child {
-  margin-bottom: 0.5rem; /* Spazio sotto il testo principale */
+  margin-bottom: 0.5rem; 
 }
 
 /* Stili per la sezione delle icone */
 footer > div:last-child {
-  display: flex; /* Dispone le icone in fila */
-  justify-content: center; /* Allinea le icone al centro */
-  gap: 1rem; /* Spazio tra le icone */
+  display: flex; 
+  justify-content: center; 
+  gap: 1rem; 
 }
 
 /* Stili per le icone */
 footer svg {
-  color: var(--white); /* Colore delle icone bianco */
-  font-size: 1.5rem; /* Dimensione delle icone */
-  transition: color 0.3s ease; /* Transizione per il cambiamento del colore */
+  color: var(--white); 
+  font-size: 1.5rem; 
+  transition: color 0.3s ease; 
 }
 
 footer svg:hover {
-  color: var(--coral); /* Colore delle icone al passaggio del mouse */
+  color: var(--coral);
 }
