@@ -1,6 +1,8 @@
+// Footer.js
 import React from "react";
 import { FaReact, FaGithub } from "react-icons/fa";
 import { SiNetlify, SiFirebase } from "react-icons/si";
+import "../styles/Footer.css";
 
 const Footer = () => {
   return (

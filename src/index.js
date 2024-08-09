@@ -3,10 +3,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
 import App from "./App";
+import MyProvider from "./context/Context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <MyProvider>
+      <App />
+    </MyProvider>
   </React.StrictMode>
 );

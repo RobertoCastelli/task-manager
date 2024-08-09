@@ -1,12 +1,11 @@
+// Navbar.js
 import React from "react";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
     <nav>
       <div>logo</div>
-      <ul>
-        <li>login</li>
-      </ul>
     </nav>
   );
 };

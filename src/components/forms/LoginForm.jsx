@@ -4,24 +4,27 @@ import FormTemplate from "./FormTemplate";
 import * as Yup from "yup";
 
 const LoginForm = () => {
+  // Valori iniziali per il modulo
   const initialValues = {
     codicePersona: "",
   };
 
+  // Schema di validazione per il modulo
   const validationSchema = Yup.object({
     codicePersona: Yup.string()
-      .length(8, "inserire 8 caratteri numerici")
-      .matches(/^\d+$/, "Il codice deve contenere solo numeri")
-      .required("obbligatorio"),
+      .matches(/^\d{8}$/, "Il codice deve contenere solo 8 numeri")
+      .required("campo obbligatorio"),
   });
 
+  // Funzione chiamata quando il modulo viene inviato
   const onSubmit = (values, { setSubmitting }) => {
     setTimeout(() => {
-      console.log("login from data", values);
-      setSubmitting(false);
+      console.log("Dati del modulo:", values);
+      setSubmitting(false); // Permette di inviare il modulo di nuovo
     }, 1000);
   };
 
+  // Configurazione dei campi del modulo
   const fields = [
     {
       name: "codicePersona",
@@ -32,6 +35,7 @@ const LoginForm = () => {
   ];
 
   return (
+    // Renderizza il template del modulo con le configurazioni fornite
     <FormTemplate {...{ initialValues, validationSchema, onSubmit, fields }} />
   );
 };

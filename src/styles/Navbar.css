@@ -1,0 +1,18 @@
+/* Stili per la navbar */
+nav {
+  background-color: var(--dark-slate-gray); /* Colore di sfondo scuro per la navbar */
+  color: var(--white); /* Colore del testo bianco per la navbar */
+  padding: 0.5rem 2rem; /* Spazio interno: 0.5rem sopra e sotto, 2rem a sinistra e destra */
+  display: flex; /* Dispone gli elementi della navbar in fila */
+  justify-content: space-between; /* Spazio tra il logo e altri elementi */
+  align-items: center; /* Allinea verticalmente gli elementi al centro */
+  border-bottom: 2px solid var(--cadet-blue); /* Bordo inferiore blu chiaro */
+}
+
+/* Stili per il logo */
+nav > div {
+  font-size: 1.5rem; /* Dimensione del testo del logo */
+  font-weight: 700; /* Peso del font per dare risalto al logo */
+}
+
+/* Aggiungi stili per altri elementi della navbar se necessario */

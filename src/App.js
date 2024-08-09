@@ -1,18 +1,17 @@
-import Footer from "./components/Footer";
-import LoginForm from "./components/forms/LoginForm";
-import Header from "./components/Header";
-import MyProvider from "./context/Context";
-
 // app.js
+import Footer from "./components/Footer";
+import AnagraficaDitteForm from "./components/forms/AnagraficaDitteForm";
+import Header from "./components/Header";
+
 function App() {
   return (
-    <MyProvider>
-      <div className="App">
+    <div className="container">
+      <main className="content">
         <Header />
-        <LoginForm />
-        <Footer />
-      </div>
-    </MyProvider>
+        <AnagraficaDitteForm />
+      </main>
+      <Footer />
+    </div>
   );
 }
 

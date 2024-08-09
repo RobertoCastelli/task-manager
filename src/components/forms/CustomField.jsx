@@ -7,7 +7,7 @@ const CustomField = ({ label, name, type = "text", placeholder }) => {
     <div>
       <label htmlFor={name}>{label}</label>
       <Field id={name} name={name} type={type} placeholder={placeholder} />
-      <ErrorMessage name={name} component="error-form" />
+      <ErrorMessage name={name} component="div" className="form-error" />
     </div>
   );
 };

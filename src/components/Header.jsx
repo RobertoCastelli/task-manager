@@ -1,6 +1,8 @@
+// Header.js
 import React, { useContext } from "react";
 import Navbar from "./Navbar";
 import { MyContext } from "../context/Context";
+import "../styles/Header.css";
 
 const Header = () => {
   const { database } = useContext(MyContext);
