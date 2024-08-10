@@ -97,10 +97,7 @@ const AnagraficaDitteForm = () => {
 
   return (
     // Renderizza il template del modulo con le configurazioni fornite
-    <FormTemplate
-      title="anagrafica ditte"
-      {...{ initialValues, validationSchema, onSubmit, fields }}
-    />
+    <FormTemplate {...{ initialValues, validationSchema, onSubmit, fields }} />
   );
 };
 

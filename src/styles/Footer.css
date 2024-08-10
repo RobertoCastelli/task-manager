@@ -1,11 +1,11 @@
 /* Stili per il footer */
-footer {
-  background-color: var(--dark-slate-gray); 
-  color: var(--white); 
-  padding: 1rem; 
-  text-align: center;
+footer { 
+  padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-size: 0.8rem; 
+  text-align: center; 
+  color: var(--white);
+  background-color: var(--dark-slate-gray); 
   border-top: 2px solid var(--cadet-blue); 
 }
 
@@ -22,12 +22,8 @@ footer > div:last-child {
 }
 
 /* Stili per le icone */
-footer svg {
+footer svg { 
+  font-size: 1.5rem;
   color: var(--white); 
-  font-size: 1.5rem; 
-  transition: color 0.3s ease; 
 }
 
-footer svg:hover {
-  color: var(--coral);
-}

@@ -1,24 +1,57 @@
 /* Stili per la navbar */
 nav { 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 0.5rem 2rem; 
-  color: var(--white);
+  display: flex;
+  align-items: center;
+  padding: 10px;
   background-color: var(--dark-slate-gray); 
   border-bottom: 2px solid var(--cadet-blue); 
 }
+
+nav > div {
+  display: flex;
+  align-items: top; 
+}
+
+/* Immagine del logo */
+nav > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+/* Stili per le liste */
 ul {
+  width: 120px;
+  margin: 0 10px;
+  padding: 0;
   list-style: none;
 }
 
-nav > div {
-  font-size: 1.5rem; 
-  font-weight: 700; 
+/* Stili per gli elementi della lista */
+li {
+  transition: color 0.3s ease; 
+  display: flex;
+  align-items: center; 
 }
 
-img {
-  width: 100px;
-  height: 100px;
+li:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
 
+/* Stili per le icone all'interno degli elementi della lista */
+li > svg {
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+/* Stili per i link */
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+/* Stile per il link attivo */
+.active {
+  color: var(--coral); 
 }

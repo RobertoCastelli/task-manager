@@ -1,17 +1,13 @@
 // Header.js
-import React, { useContext } from "react";
-import Navbar from "./Navbar";
-import { MyContext } from "../context/Context";
+import React from "react";
+import Navbar from "./navbar/Navbar";
 import "../styles/Header.css";
 
 const Header = () => {
-  const { database } = useContext(MyContext);
   return (
     <header>
       <Navbar />
-      {database.map((doc) => (
-        <div key={doc.id}>{doc.ditta}</div>
-      ))}
+      <h1>home</h1>
     </header>
   );
 };
