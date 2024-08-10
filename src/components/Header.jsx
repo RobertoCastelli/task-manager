@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <Navbar />
-      <h1>home</h1>
+      <h1>task manager</h1>
     </header>
   );
 };

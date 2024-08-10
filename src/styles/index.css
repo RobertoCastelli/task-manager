@@ -42,13 +42,14 @@ code {
     monospace;
 }
 
-h1, h3,h4 {
+h1, h2, h3, h4 {
   text-transform: uppercase;
-  color: var(--cadet-blue);
 }
+
 
 h4 {
   margin-bottom: 10px;
+  color: var(--orange);
 }
 
 * {

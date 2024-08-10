@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import "../../styles/Navbar.css";
 import TMLogo from "../../images/task_logo.jpg";
 import NavbarLink from "./NavbarLink";
-import { FiHome, FiUser, FiBarChart, FiFileText } from "react-icons/fi";
+import { FiHome, FiUser, FiBarChart, FiPrinter } from "react-icons/fi";
+import { TbReportSearch } from "react-icons/tb";
+
 import {
   MdBusiness,
-  MdLocalOffer,
-  MdDescription,
+  MdOutlineLocalOffer,
+  MdOutlineDescription,
   MdEuro,
 } from "react-icons/md";
 
@@ -36,10 +38,10 @@ const Navbar = () => {
             <NavbarLink to="/ditte" icon={MdBusiness} label="Ditte" />
           </li>
           <li>
-            <NavbarLink to="/cig" icon={MdLocalOffer} label="CIG" />
+            <NavbarLink to="/cig" icon={MdOutlineLocalOffer} label="CIG" />
           </li>
           <li>
-            <NavbarLink to="/ca" icon={MdDescription} label="CA" />
+            <NavbarLink to="/ca" icon={MdOutlineDescription} label="CA" />
           </li>
           <li>
             <NavbarLink to="/sal" icon={MdEuro} label="SAL" />
@@ -51,8 +53,9 @@ const Navbar = () => {
             <NavbarLink to="/dashboard" icon={FiBarChart} label="dashboard" />
           </li>
           <li>
-            <NavbarLink to="/verbali" icon={FiFileText} label="verbali" />
+            <NavbarLink to="/verbali" icon={FiPrinter} label="verbali" />
           </li>
+          <NavbarLink to="/reports" icon={TbReportSearch} label="reports" />
         </ul>
       </div>
     </nav>

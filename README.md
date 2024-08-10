@@ -6,6 +6,7 @@ Il progetto **Task Manager** è un'applicazione web destinata alla gestione e mo
 
 - [Panoramica](#panoramica)
 - [Tecnologie Utilizzate](#tecnologie-utilizzate)
+- [Struttura programma](#struttura-programma)
 
 ## Panoramica
 
@@ -21,3 +22,38 @@ Il Task Manager ti permette di:
 - **Firebase**: Per autenticazione, database e hosting.
 - **React Router**: Per la navigazione tra le pagine dell'applicazione.
 - **CSS/SCSS**: Per la progettazione e lo styling dell'interfaccia utente.
+
+## Struttura Programma
+
+```mermaid
+graph TD
+    %% Definizione dei nodi principali
+    CIG -->|Accordo Quadro| Accordo_Quadro
+    CIG -->|Affidamento Diretto| Affidamento_Diretto
+
+    %% Definizione dei sottogruppi per una disposizione più ordinata
+    subgraph Accordo_Quadro_Subsystem
+        direction TB
+        Accordo_Quadro
+        ContrattoAttuativo_Accordo_Quadro
+        SAL_Accordo_Quadro
+        Verbale_Accordo_Quadro
+        Accordo_Quadro -->|includes| ContrattoAttuativo_Accordo_Quadro
+        ContrattoAttuativo_Accordo_Quadro -->|includes| SAL_Accordo_Quadro
+        SAL_Accordo_Quadro -->|generates| Verbale_Accordo_Quadro
+        SAL_Accordo_Quadro -->|erodes| Accordo_Quadro
+    end
+
+    subgraph Affidamento_Diretto_Subsystem
+        direction TB
+        Affidamento_Diretto
+        SAL_Affidamento_Diretto
+        Verbale_Affidamento_Diretto
+        Affidamento_Diretto -->|includes| SAL_Affidamento_Diretto
+        SAL_Affidamento_Diretto -->|generates| Verbale_Affidamento_Diretto
+        SAL_Affidamento_Diretto -->|erodes| Affidamento_Diretto
+    end
+
+    %% Relazioni generali
+    ContrattoAttuativo_Accordo_Quadro -->|erodes| CIG
+```
