@@ -30,6 +30,7 @@ graph TD
     %% Definizione dei nodi principali
     CIG -->|Accordo Quadro| Accordo_Quadro
     CIG -->|Affidamento Diretto| Affidamento_Diretto
+    CIG -->|Gara| Gara
 
     %% Definizione dei sottogruppi per una disposizione più ordinata
     subgraph Accordo_Quadro_Subsystem
@@ -52,6 +53,16 @@ graph TD
         Affidamento_Diretto -->|includes| SAL_Affidamento_Diretto
         SAL_Affidamento_Diretto -->|generates| Verbale_Affidamento_Diretto
         SAL_Affidamento_Diretto -->|erodes| Affidamento_Diretto
+    end
+
+     subgraph Gara_Subsystem
+        direction TB
+        Gara
+        SAL_Gara
+        Verbale_Gara
+        Gara-->|includes| SAL_Gara
+        SAL_Gara -->|generates| Verbale_Gara
+        SAL_Gara -->|erodes| Gara
     end
 
     %% Relazioni generali

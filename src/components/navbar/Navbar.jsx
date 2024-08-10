@@ -24,7 +24,7 @@ const Navbar = () => {
       <img src={TMLogo} alt="task_logo" />
       <div>
         <ul className={activeMenu === "menu" ? "visible" : "hidden"}>
-          <h4 onClick={() => toggleMenu("menu")}>menu</h4>
+          <h3 onClick={() => toggleMenu("menu")}>menu</h3>
           <li>
             <NavbarLink to="/" icon={FiHome} label="home" />
           </li>
@@ -33,7 +33,7 @@ const Navbar = () => {
           </li>
         </ul>
         <ul className={activeMenu === "form" ? "visible" : "hidden"}>
-          <h4 onClick={() => toggleMenu("form")}>form</h4>
+          <h3 onClick={() => toggleMenu("form")}>form</h3>
           <li>
             <NavbarLink to="/ditte" icon={MdBusiness} label="Ditte" />
           </li>
@@ -48,7 +48,7 @@ const Navbar = () => {
           </li>
         </ul>
         <ul className={activeMenu === "utility" ? "visible" : "hidden"}>
-          <h4 onClick={() => toggleMenu("utility")}>utility</h4>
+          <h3 onClick={() => toggleMenu("utility")}>utility</h3>
           <li>
             <NavbarLink to="/dashboard" icon={FiBarChart} label="dashboard" />
           </li>
