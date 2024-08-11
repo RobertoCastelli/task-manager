@@ -8,7 +8,7 @@
     --dark-slate-gray: #282c34;
     --ocean-blue: #3a698f;
     --white: #f4f4f4;
-    --grey: #555;
+    --grey: #4a5568;
     --light-grey: #ccc;
 }
 
@@ -17,9 +17,8 @@ body {
   margin: 0;
   font-family: "Montserrat", "Roboto", sans-serif;
   font-weight: 400;
-  text-transform: capitalize;
   color: var(--white);
-  background-color: var(--ocean-blue);
+  background-color: var(--dark-slate-gray);
   letter-spacing: 0.05rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,7 +33,7 @@ body::before {
   height: 100%;
   background: url("../images/bg.jpg");
   content: "";
-  opacity: 0.01; /* Regola l'opacità dell'immagine di background */
+  opacity: 0.05; /* Regola l'opacità dell'immagine di background */
 }
 
 code {
@@ -43,6 +42,7 @@ code {
 }
 
 h1, h2, h3, h4 {
+text-align: center;
   text-transform: uppercase;
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/HomePage.css";
 import { FiBarChart, FiPrinter, FiPenTool } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import { GoGear } from "react-icons/go";
 import { FaRegEye } from "react-icons/fa";
 import { AiOutlineTable } from "react-icons/ai";
@@ -21,17 +22,19 @@ const HomePage = () => {
           <h4>registrazione</h4>
         </div>
         <div className="homepage-ditte">
-          <button>
-            <MdBusiness /> Ditte
-          </button>
+          <Link to="/ditte">
+            <button className="homepage-btn">
+              <MdBusiness /> Ditte
+            </button>
+          </Link>
         </div>
         <div className="homepage-cig">
-          <button>
+          <button className="homepage-btn">
             <MdOutlineLocalOffer /> CIG
           </button>
         </div>
         <div className="homepage-ca">
-          <button>
+          <button className="homepage-btn">
             <MdOutlineDescription /> CA
           </button>
         </div>
@@ -43,12 +46,12 @@ const HomePage = () => {
           <h4>gestione</h4>
         </div>
         <div className="homepage-sal">
-          <button>
+          <button className="homepage-btn">
             <MdEuro /> SAL
           </button>
         </div>
         <div className="homepage-verbali">
-          <button>
+          <button className="homepage-btn">
             <FiPrinter /> Verbali
           </button>
         </div>
@@ -61,13 +64,13 @@ const HomePage = () => {
         </div>
 
         <div className="homepage-prospetti">
-          <button>
+          <button className="homepage-btn">
             <AiOutlineTable />
             Prospetti
           </button>
         </div>
         <div className="homepage-dashboard">
-          <button>
+          <button className="homepage-btn">
             <FiBarChart />
             Dashboard
           </button>

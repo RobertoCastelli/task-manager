@@ -3,7 +3,7 @@ import React from "react";
 import FormTemplate from "./FormTemplate";
 import * as Yup from "yup";
 
-const AnagraficaDitteForm = () => {
+const DitteForm = () => {
   // Valori iniziali per il modulo
   const initialValues = {
     ditta: "",
@@ -25,14 +25,14 @@ const AnagraficaDitteForm = () => {
     via: Yup.string().required("campo obbligatorio"),
     civico: Yup.string().required("campo obbligatorio"),
     cap: Yup.string()
-      .matches(/^\d{5}$/, "Il CAP deve essere composto da 5 cifre")
+      .matches(/^\d{5}$/, "il CAP deve avere 5 cifre")
       .required("campo obbligatorio"),
     città: Yup.string().required("campo obbligatorio"),
     piva: Yup.string()
-      .matches(/^\d{11}$/, "La Partita IVA deve essere composta da 11 cifre")
+      .matches(/^\d{11}$/, "la P.IVA deve avere 11 cifre")
       .required("campo obbligatorio"),
     pec: Yup.string()
-      .email("L'indirizzo PEC deve essere un'email valida")
+      .email("l'email deve essere valida")
       .required("campo obbligatorio"),
     referenteDitta: Yup.string().required("campo obbligatorio"),
     lottoGeografico: Yup.string().required("campo obbligatorio"),
@@ -49,56 +49,75 @@ const AnagraficaDitteForm = () => {
   // Configurazione dei campi del modulo
   const fields = [
     {
+      label: "ditta",
       name: "ditta",
       type: "text",
-      placeholder: "ditta",
+      placeholder: "inserisci ditta",
     },
     {
+      label: "tipologia servizio",
       name: "tipologiaServizio",
       type: "text",
-      placeholder: "tipologia del servizio",
+      placeholder: "inserisci tipologia",
     },
     {
+      label: "via",
       name: "via",
       type: "text",
-      placeholder: "via",
+      placeholder: "inserisci via",
     },
     {
+      label: "civico",
       name: "civico",
       type: "text",
-      placeholder: "civico",
+      placeholder: "inserisci civico",
     },
     {
+      label: "cap",
       name: "cap",
       type: "text",
-      placeholder: "cap",
+      placeholder: "inserisci cap",
     },
     {
+      label: "città",
       name: "città",
       type: "text",
-      placeholder: "città",
+      placeholder: "inserisci città",
     },
     {
+      label: "p.iva",
       name: "piva",
       type: "text",
-      placeholder: "P.IVA",
+      placeholder: "inserisci p.iva",
     },
     {
+      label: "pec",
       name: "pec",
       type: "email",
-      placeholder: "PEC",
+      placeholder: "inserisci pec",
     },
     {
+      label: "referente ditta",
       name: "referenteDitta",
       type: "text",
-      placeholder: "referente ditta",
+      placeholder: "inserisci referente ditta",
+    },
+    {
+      label: "lotto geografico",
+      name: "lottoGeografico",
+      type: "text",
+      placeholder: "inserisci lotto geografico",
     },
   ];
 
   return (
-    // Renderizza il template del modulo con le configurazioni fornite
-    <FormTemplate {...{ initialValues, validationSchema, onSubmit, fields }} />
+    <div>
+      <h3>inserisci nuova ditta</h3>
+      <FormTemplate
+        {...{ initialValues, validationSchema, onSubmit, fields }}
+      />
+    </div>
   );
 };
 
-export default AnagraficaDitteForm;
+export default DitteForm;

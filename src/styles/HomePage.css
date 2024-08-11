@@ -1,5 +1,5 @@
 /* Stili per i pulsanti */
-button {
+.homepage-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,16 +12,15 @@ button {
     background-color: var(--dark-slate-gray);
     cursor: pointer;
     gap: 8px;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.3s
 }
 
-button:hover {
+.homepage-btn:hover {
     color: var(--dark-slate-gray);
     background-color: var(--coral);
-    transform: translateY(-2px);
 }
 
-button svg {
+.homepage-btn svg {
     font-size: 20px;
 }
 
@@ -39,8 +38,6 @@ button svg {
 }
 
 .homepage-title {
-    text-align: center;
-    color: var(--coral);
     grid-area: title;
 }
 
@@ -54,7 +51,7 @@ button svg {
     padding: 10px;
     border: 2px solid var(--cadet-blue);
     border-radius: 10px;
-    background-color: var(--ocean-blue);
+    background-color: var(--grey);
     flex-direction: column;
     gap: 10px;
 }

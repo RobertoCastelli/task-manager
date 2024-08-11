@@ -1,0 +1,102 @@
+/* Stili generali del form */
+.form-container {
+    position: relative;
+    display: grid;
+    align-items: start; /* Allinea gli elementi all'inizio della griglia */
+    max-width: 500px; /* Imposta una larghezza massima per il form */
+    margin: auto; /* Centra il form nella pagina */
+    padding: 20px;
+    border: 2px solid var(--cadet-blue);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--grey); /* Grigio più bluastro */
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
+
+/* Stili per i campi del form */
+.form-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stili per i label */
+.form-input label {
+    display: block; /* Assicura che il label occupi tutta la larghezza disponibile */
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize; 
+    color: var(--white);
+    margin-bottom: 5px; /* Spazio tra il label e l'input */
+    margin-top: 15px;
+    letter-spacing: 0.05rem; 
+}
+
+/* Dimensioni degli input basate sul contenuto */
+input[name="ditta"],
+input[name="tipologiaServizio"],
+input[name="via"],
+input[name="città"],
+input[name="referenteDitta"], 
+input[name="pec"],
+input[name="civico"],
+input[name="cap"],
+input[name="piva"] {
+    width: 100%; 
+}
+
+input {
+    padding: 10px;
+    border: 2px solid var(--cadet-blue);  
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Montserrat", "Roboto", sans-serif;
+    text-transform: capitalize;
+    color: var(--white);
+    background-color: var(--grey);
+    letter-spacing: 0.05rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: var(--coral);
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--cadet-blue);
+}
+
+/* Stili per gli errori del form */
+.form-error {
+    position: absolute;
+    top: 100%; /* Posiziona l'errore subito sotto l'input */
+    left: 5%;
+    font-size: small;
+    font-style: italic;
+    text-transform: lowercase;
+    color: var(--coral);
+}
+
+/* Stili per il bottone di invio */
+.form-btn[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--dark-slate-gray);
+    justify-self: end; /* Posiziona il bottone alla fine della griglia */
+    grid-column: span 2; /* Fa occupare al bottone tutta la larghezza della griglia */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px; 
+}
+
+.form-btn[type="submit"]:hover {
+    color: var(--dark-slate-gray);
+    background-color: var(--coral);
+
+}

@@ -4,7 +4,7 @@ import { Field, ErrorMessage } from "formik";
 
 const CustomField = ({ label, name, type = "text", placeholder }) => {
   return (
-    <div>
+    <div className="form-input">
       <label htmlFor={name}>{label}</label>
       <Field id={name} name={name} type={type} placeholder={placeholder} />
       <ErrorMessage name={name} component="div" className="form-error" />

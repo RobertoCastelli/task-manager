@@ -2,13 +2,8 @@
 import React from "react";
 import { Formik, Form } from "formik";
 import CustomField from "./CustomField";
-import "../../styles/Form.css";
+import "../../styles/DitteForm.css";
 
-/**
- * Componente per gestire moduli con Formik.
- *
- * @param props - Le proprietà del componente.
- */
 const FormTemplate = (props) => (
   <Formik
     initialValues={props.initialValues} // Valori iniziali dei campi del modulo
@@ -16,7 +11,7 @@ const FormTemplate = (props) => (
     onSubmit={props.onSubmit} // Funzione chiamata al momento dell'invio del modulo
   >
     {({ isSubmitting }) => (
-      <Form>
+      <Form className="form-container">
         {props.fields.map((field, index) => (
           <CustomField
             key={index} // Identificatore unico per ogni campo
@@ -27,7 +22,7 @@ const FormTemplate = (props) => (
           />
         ))}
         {/* Bottone per inviare il modulo */}
-        <button type="submit" disabled={isSubmitting}>
+        <button type="submit" className="form-btn" disabled={isSubmitting}>
           invia
         </button>
       </Form>
