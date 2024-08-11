@@ -1,18 +1,3 @@
-/* Stili per la navbar */
-nav { 
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--dark-slate-gray);
-}
-
-/* Immagine del logo */
-img {
-  width: 100px;
-  height: 100px;
-  
-}
-
 /* Stili per le liste */
 .navbar-ul {
   display: flex;

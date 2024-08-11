@@ -1,6 +1,9 @@
 import React from "react";
 import "../styles/HomePage.css";
-import { FiBarChart, FiPrinter } from "react-icons/fi";
+import { FiBarChart, FiPrinter, FiPenTool } from "react-icons/fi";
+import { GoGear } from "react-icons/go";
+import { FaRegEye } from "react-icons/fa";
+import { AiOutlineTable } from "react-icons/ai";
 import {
   MdBusiness,
   MdOutlineLocalOffer,
@@ -13,6 +16,10 @@ const HomePage = () => {
     <main className="homepage-container">
       <h3 className="homepage-title">homepage</h3>
       <div className="homepage-form">
+        <div className="homepage-subtitle">
+          <FiPenTool />
+          <h4>registrazione</h4>
+        </div>
         <div className="homepage-ditte">
           <button>
             <MdBusiness /> Ditte
@@ -30,7 +37,11 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="homepage-utility">
+      <div className="homepage-manage">
+        <div className="homepage-subtitle">
+          <GoGear />
+          <h4>gestione</h4>
+        </div>
         <div className="homepage-sal">
           <button>
             <MdEuro /> SAL
@@ -41,9 +52,24 @@ const HomePage = () => {
             <FiPrinter /> Verbali
           </button>
         </div>
+      </div>
+
+      <div className="homepage-control">
+        <div className="homepage-subtitle">
+          <FaRegEye />
+          <h4>controllo</h4>
+        </div>
+
+        <div className="homepage-prospetti">
+          <button>
+            <AiOutlineTable />
+            Prospetti
+          </button>
+        </div>
         <div className="homepage-dashboard">
           <button>
-            <FiBarChart /> Dashboard
+            <FiBarChart />
+            Dashboard
           </button>
         </div>
       </div>

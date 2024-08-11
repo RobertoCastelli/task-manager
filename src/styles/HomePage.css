@@ -1,41 +1,9 @@
-.homepage-container {
-    display: grid;
-    justify-content: center;
-    border-radius: 10px;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "title title"
-        "form utility";
-}
-
-.homepage-title {
-    text-align: center;
-    color: var(--coral);
-    grid-area: title
-}
-
-.homepage-form,
-.homepage-utility {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    justify-items: center;
-}
-
-.homepage-form {
-    grid-area: form;
-}
-
-.homepage-utility {
-    grid-area: utility;
-}
-
+/* Stili per i pulsanti */
 button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  width: 150px;
+    width: 150px;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
@@ -50,11 +18,81 @@ button {
 button:hover {
     color: var(--dark-slate-gray);
     background-color: var(--coral);
-    transform: translateY(-2px)
+    transform: translateY(-2px);
 }
 
 button svg {
     font-size: 20px;
 }
 
+/* Container principale */
+.homepage-container {
+    display: grid;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 0 20px;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title title title"
+        "form manage control";
+}
 
+.homepage-title {
+    text-align: center;
+    color: var(--coral);
+    grid-area: title;
+}
+
+/* Sezioni principali */
+.homepage-form,
+.homepage-manage,
+.homepage-control {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    padding: 10px;
+    border: 2px solid var(--cadet-blue);
+    border-radius: 10px;
+    background-color: var(--ocean-blue);
+    flex-direction: column;
+    gap: 10px;
+}
+
+.homepage-form {
+    grid-area: form;
+}
+
+.homepage-manage {
+    grid-area: manage;
+}
+
+.homepage-control {
+    grid-area: control;
+}
+
+/* Effetto hover */
+.homepage-form:hover,
+.homepage-manage:hover,
+.homepage-control:hover {
+    border: 2px solid transparent;
+    outline: 2px solid var(--coral);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Stili per i sottotitoli */
+.homepage-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark-slate-gray);
+    margin-bottom: 10px;
+}
+
+.homepage-subtitle h4 {
+    margin-top: 0px;
+}
+
+.homepage-subtitle svg {
+    font-size: 24px;
+}
