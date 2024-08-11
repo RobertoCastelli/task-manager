@@ -1,18 +1,26 @@
 .homepage-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: 100px auto;
+    border-radius: 10px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: auto;
     grid-template-areas: 
-    "title title"
-    "form utility"
-    ;
-    text-transform: lowercase;
+        "title title"
+        "form utility";
 }
 
 .homepage-title {
-    grid-area: title;
     text-align: center;
+    color: var(--coral);
+    grid-area: title
+}
+
+.homepage-form,
+.homepage-utility {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
 }
 
 .homepage-form {
@@ -23,7 +31,30 @@
     grid-area: utility;
 }
 
-.homepage-subtitle {
+button {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+  width: 150px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: var(--dark-slate-gray);
+    cursor: pointer;
+    gap: 8px;
+    transition: background-color 0.3s, transform 0.2s;
 }
+
+button:hover {
+    color: var(--dark-slate-gray);
+    background-color: var(--coral);
+    transform: translateY(-2px)
+}
+
+button svg {
+    font-size: 20px;
+}
+
+

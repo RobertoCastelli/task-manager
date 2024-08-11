@@ -1,11 +1,21 @@
 /* Stili per l'header */
 header { 
-  display: flex; 
-  align-items: center; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  display:flex;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; 
   color: var(--white);
   background-color: var(--dark-slate-gray); 
   flex-direction: column; 
   border-bottom: 2px solid var(--cadet-blue);
+}
+
+.header-title {
+  margin: 0;
+}
+
+.header-subtitle {
+  font-style: italic;
+  text-transform: lowercase;
+  margin-bottom: 10px;
 }
 

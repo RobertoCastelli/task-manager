@@ -1,46 +1,41 @@
 /* Stili per la navbar */
 nav { 
-  display: flex;
+  display: flex; 
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: var(--dark-slate-gray); 
-  border-bottom: 2px solid var(--cadet-blue); 
-}
-
-nav > div {
-  display: flex;
-  align-items: top; 
+  background-color: var(--dark-slate-gray);
 }
 
 /* Immagine del logo */
-nav > img {
+img {
   width: 100px;
   height: 100px;
-  margin-right: 20px;
+  
 }
 
 /* Stili per le liste */
-ul {
-  width: 120px;
-  margin: 0 10px;
+.navbar-ul {
+  display: flex;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 /* Stili per gli elementi della lista */
-li {
+.navbar-li {
   transition: color 0.3s ease; 
   display: flex;
   align-items: center; 
+  padding-right: 20px;
 }
 
-li:hover {
+.navbar-li:hover {
   cursor: pointer;
   color: var(--orange);
 }
 
 /* Stili per le icone all'interno degli elementi della lista */
-li > svg {
+.navbar-li > svg {
   font-size: 1rem;
   margin-right: 8px;
 }

@@ -7,8 +7,8 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <div>Task Manager - AGIS @ 2024 v.1.08</div>
-      <div>
+      <div className="footer-content">Task Manager - AGIS @ 2024 v.4.08</div>
+      <div className="footer-icons">
         <FaReact />
         <FaGithub />
         <SiNetlify />

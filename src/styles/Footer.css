@@ -10,12 +10,12 @@ footer {
 }
 
 /* Stili per la sezione di testo del footer */
-footer > div:first-child {
+.footer-content {
   margin-bottom: 0.5rem; 
 }
 
 /* Stili per la sezione delle icone */
-footer > div:last-child {
+.footer-icons {
   display: flex; 
   justify-content: center; 
   gap: 1rem; 

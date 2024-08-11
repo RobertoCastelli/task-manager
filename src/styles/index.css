@@ -8,7 +8,7 @@
     --dark-slate-gray: #282c34;
     --ocean-blue: #3a698f;
     --white: #f4f4f4;
-    --grey: #ccc;
+    --grey: #555;
 }
 
 body {
@@ -43,11 +43,6 @@ code {
 
 h1, h2, h3, h4 {
   text-transform: uppercase;
-}
-
-
-h4 {
-  color: var(--dark-slate-gray);
 }
 
 * {

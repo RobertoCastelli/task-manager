@@ -1,13 +1,12 @@
 // Header.js
 import React from "react";
-import Navbar from "./navbar/Navbar";
 import "../styles/Header.css";
 
 const Header = () => {
   return (
     <header>
-      <Navbar />
-      <h1>task manager</h1>
+      <h1 className="header-title">task manager</h1>
+      <div className="header-subtitle">sistema di gestione contratti</div>
     </header>
   );
 };
