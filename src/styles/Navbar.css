@@ -1,6 +1,6 @@
+
 /* Stili per le liste */
 .navbar-ul {
-  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -9,8 +9,6 @@
 /* Stili per gli elementi della lista */
 .navbar-li {
   transition: color 0.3s ease; 
-  display: flex;
-  align-items: center; 
   padding-right: 20px;
 }
 
@@ -22,7 +20,7 @@
 /* Stili per le icone all'interno degli elementi della lista */
 .navbar-li > svg {
   font-size: 1rem;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 /* Stili per i link */
@@ -35,3 +33,4 @@ a {
 .active {
   color: var(--coral); 
 }
+

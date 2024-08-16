@@ -12,7 +12,7 @@ const Navbar = () => {
             to="/login"
             className={({ isActive }) => (isActive ? "active" : undefined)}
           >
-            <FiUser /> Login
+            <FiUser /> login
           </NavLink>
         </li>
       </ul>
