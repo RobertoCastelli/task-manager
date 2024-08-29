@@ -6,7 +6,7 @@
     max-width: 500px; /* Imposta una larghezza massima per il form */
     margin: auto; /* Centra il form nella pagina */
     padding: 20px;
-    border: 2px solid var(--cadet-blue);
+    border: 2px solid transparent;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: var(--grey); /* Grigio più bluastro */
